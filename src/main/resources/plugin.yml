@@ -1,0 +1,16 @@
+name: RandomSpawn
+version: '${version}'
+main: com.caellab.randomspawn.RandomSpawnPlugin
+api-version: '1.21'
+description: 新玩家首次进服时随机投放到野外的安全落点
+author: CaelLab
+commands:
+  randomspawn:
+    description: 随机投放玩家到野外安全落点
+    usage: /randomspawn [玩家]
+    aliases: [rspawn]
+    permission: randomspawn.admin
+permissions:
+  randomspawn.admin:
+    description: 使用 /randomspawn
+    default: op

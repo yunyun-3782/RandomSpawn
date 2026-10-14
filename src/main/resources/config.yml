@@ -1,0 +1,20 @@
+enabled: true
+
+# 生效的世界（按玩家当前所在世界判断）
+worlds:
+  - world
+
+# 落点范围：x、z 的绝对值都取 [min-distance, max-distance]，正负随机
+min-distance: 1000
+max-distance: 3000
+
+# 最多验证多少个区块，全都不合格就放弃（保留原出生点）
+max-chunk-attempts: 10
+
+# 最低落点高度。低于该值说明是水下或地下，不采用
+min-y: 63
+
+# 是否把随机点设成该玩家的重生点（没床时回到这里；之后睡床会被床覆盖）
+set-respawn-point: false
+
+message: "&a你被随机投放到野外：&e%x%, %z% &7（按 F3 看坐标）"
